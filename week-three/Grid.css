@@ -1,0 +1,62 @@
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Grid-Contents {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 300px;
+}
+.grid-item-1 {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nasaImg {
+  width: 100%;
+  height: 160%;
+  object-fit: cover;
+  position: relative;
+  top: -18px;
+}
+
+.planets1 {
+  width: 100%;
+  height: 160%;
+  object-fit: cover;
+  position: relative;
+  top: -18px;
+}
+
+.grid-item-2 {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-item-4 {
+  background-color: black;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  padding: 20px;
+}
+.rocket {
+  transform: scale(0.6) rotate(-45deg);
+  position: relative;
+  top: -75px;
+}
+.grid-item-5 {
+  overflow: auto;
+  background-color: black;
+  grid-column: 2 / 4;
+  color: white;
+  grid-row: 2;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,20 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #323232;
+  padding: 10px;
+
+  font-size: 20px;
+}
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+.navBar ul li {
+  color: white;
+  margin: 15px;
+  cursor: pointer;
+}
+.navBar ul li a {
+  text-decoration: none;
+}
