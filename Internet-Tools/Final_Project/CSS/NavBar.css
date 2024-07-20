@@ -1,0 +1,101 @@
+Nav > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.normalBar .log {
+  display: flex;
+  margin-left: auto;
+  height: 100%;
+  gap: 20px;
+}
+
+.normalBar {
+  margin-left: 30px;
+}
+
+.normalBar div li a {
+  text-decoration: none;
+  color: white;
+}
+
+.normalBar div li a:hover {
+  color: yellow;
+}
+
+header {
+  background: linear-gradient(90deg, #814d01, #ffca02);
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+Nav a:hover {
+  color: yellow;
+}
+
+.sideBar {
+  margin-right: auto;
+  position: fixed;
+  background: linear-gradient(90deg, #814e0146, #ffc80244);
+  backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sideBar a {
+  margin: 20px;
+  width: 100%;
+}
+
+.sideBar div {
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.sideBar a {
+  width: 100%;
+}
+.hideOnMoblie {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s linear, visibility 0.5s linear;
+}
+.menu-button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s linear, visibility 0.5s linear;
+}
+@media (max-width: 700px) {
+  .hideOnMoblie {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu-button {
+    opacity: 1;
+    visibility: visible;
+  }
+}
