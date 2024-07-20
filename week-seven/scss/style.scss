@@ -1,0 +1,46 @@
+$picture-width: 200px;
+$picuture-height: 200px;
+$b-width: 300px;
+$b-hight: 200px;
+$radius: 10px;
+
+.picture-size {
+  width: $picture-width;
+  height: $picuture-height;
+  object-fit: cover;
+}
+.fontFormat {
+  font-size: 14px;
+  font-family: Roboto, verdana;
+}
+
+.footerFormat {
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto, verdana;
+}
+
+.bImgFormat {
+  width: $b-width;
+  height: $b-hight;
+  object-fit: cover;
+  border-radius: $radius;
+  margin-left: 10px;
+}
+.row-gap {
+  margin-bottom: 1rem;
+}
+.huge {
+  font-family: Roboto, verdana;
+  font-size: 30px;
+  font-weight: 700;
+}
+.rectangle {
+  height: 215px;
+  width: 1000px;
+  border: 1px solid gray;
+  border-radius: $radius;
+  display: flex;
+  align-items: center;
+  box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.2);
+}

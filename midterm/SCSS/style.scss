@@ -1,0 +1,52 @@
+$headerColor: darkgray;
+$lefTextColor: blue;
+.col#Hright {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  margin: 10px;
+}
+#Hproperties {
+  background-color: $headerColor;
+}
+.Hlinks {
+  margin: 10px 5px;
+}
+.col#Hleft {
+  display: flex;
+  justify-content: flex-start;
+}
+.headerButtons {
+  margin: 0 5px;
+}
+.leftHalf {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: $lefTextColor;
+}
+.col-10#inputBox {
+  display: flex;
+  padding: 5px;
+  font-size: 2rem;
+}
+.col-2#bottomLeft {
+  display: flex;
+}
+footer {
+  text-align: center;
+  background-color: $headerColor;
+}
+#numberBox {
+  height: 100px;
+  width: 200px;
+  border: 1px;
+  font-size: 2em;
+  display: flex;
+  color: black;
+}
+.enterProperties {
+  margin-top: 100px;
+  height: 30px;
+  display: flex;
+  justify-self: center;
+}
