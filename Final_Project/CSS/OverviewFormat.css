@@ -1,0 +1,35 @@
+#title {
+  font-size: 100px;
+  font-weight: 700;
+}
+.disTime {
+  font-size: 50px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ffca02, #814d01);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.dasHistory {
+  font-size: 50px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ffca02, #814d01);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dasContainer {
+  height: 200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 20px;
+}
+
+.dasRect {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  object-fit: cover;
+}

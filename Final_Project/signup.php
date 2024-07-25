@@ -19,11 +19,11 @@ include "./includes/header.php"
         </div>
         <div class="userName">
          Username: 
-        <input type="Text" name="username" placeholder="Username...">
+        <input type="Text" name="username" placeholder="Username05611">
         </div>
         <div class="email">
          Email: 
-        <input type="email" name="email" placeholder="Email...">
+        <input type="email" name="email" placeholder="testuser@something.com">
         </div>
         <div class="password">
         Password: 
@@ -36,12 +36,22 @@ include "./includes/header.php"
         <button type="submit" name="submit">Submit</button>
         </div>
         </div>
-        <?php
+    </div>
+   </form>
+   <?php
         if(isset($_GET["error"]))
         {
             if($_GET["error"] == "emptyinput")
             {
                 echo "Please fill in all the fields";
+            }
+            else if($_GET["error"] == "invaliduid")
+            {
+                echo "Choose a proper username!";
+            }
+            else if ($_GET["error"] == "stmtFailed")
+            {
+                echo "Something went wrong, try Again!";
             }
             else if($_GET["error"] == "passwordsdontmatch")
             {
@@ -53,9 +63,6 @@ include "./includes/header.php"
             }
         }
         ?>
-    </div>
-   </form>
-   
 </body>
 <?php
 include "./includes/footer.php"

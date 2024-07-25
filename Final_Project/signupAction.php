@@ -23,6 +23,12 @@ If(isset($_POST["submit"]))
         exit();
     }
 
+    if(uidExists($conn, $username) !== false)
+    {
+        header("location: ../Final_project/signup.php?error=usernametaken");
+        exit();
+    }
+
     createUser($conn, $firstname, $lastname, $username, $email, $password);
 
 

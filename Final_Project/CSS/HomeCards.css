@@ -1,22 +1,5 @@
-:root {
-  --main-colour1: rgb(7, 7, 7);
-  --main-colour2: #0f0f0f;
-  --test-colour: white;
-}
-
-body {
-  background: var(--main-colour1);
-  color: var(--test-colour);
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
+#cards {
+  z-index: 1;
 }
 
 #cards:hover > .card > .cardBorder {
@@ -25,7 +8,7 @@ body {
 
 .card {
   border-radius: 10px;
-  height: 1000px;
+  height: 1800px;
   width: 100%;
   position: relative;
 }
@@ -41,7 +24,7 @@ body {
   top: 0px;
   transition: opacity 500ms;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .card > .cardBorder {
@@ -51,7 +34,7 @@ body {
     #814d01,
     transparent 40%
   );
-  z-index: 1;
+  z-index: 2;
 }
 
 .card > .cardContent {
@@ -59,29 +42,15 @@ body {
   border-radius: inherit;
   position: absolute;
   inset: 2px;
-  z-index: 2;
+  z-index: 3;
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--main-colour2);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #1d1d1d;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #2b2b2b;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (min-width: 700px) {
+  .card {
+    border-radius: 10px;
+    height: 2800px;
+    width: 100%;
+    position: relative;
+  }
 }

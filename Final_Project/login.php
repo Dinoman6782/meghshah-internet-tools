@@ -23,6 +23,19 @@ include "./includes/header.php"
         </div>
     </div>
    </form>
+   <?php
+        if(isset($_GET["error"]))
+        {
+            if($_GET["error"] == "emptyinput")
+            {
+                echo "Please fill in all the fields!";
+            }
+            else if($_Get["error"] == "wronglogin")
+            {
+                echo "Invalid Login Information!";
+            }
+        }
+        ?>
 </body>
 <?php
 include "./includes/footer.php"

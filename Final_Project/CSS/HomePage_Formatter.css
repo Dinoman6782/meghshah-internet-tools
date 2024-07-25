@@ -43,3 +43,11 @@
   border-radius: 30px;
   border: solid gold 2px;
 }
+
+@media (max-width: 700px) {
+  .image > img {
+    height: 100%;
+    position: relative;
+    transform: translateX(-200px);
+  }
+}
