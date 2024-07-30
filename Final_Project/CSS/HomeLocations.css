@@ -1,0 +1,155 @@
+.locations {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(90deg, #814d01, #ffca02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+
+.locationsImg {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  position: relative;
+}
+
+.locationsImg img {
+  grid-area: 1/1/11/11;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+#vanButton {
+  cursor: pointer;
+  grid-area: 6/1/8/2;
+  z-index: 4;
+  background-color: transparent;
+  border: none;
+  content: "";
+}
+#vanDiv {
+  grid-area: 6/2/8/4;
+  z-index: 4;
+  background-color: #0f0f0f;
+  border: solid 1px gold;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 40px;
+}
+#vanDiv img {
+  max-width: 100%;
+  max-height: 60%;
+  object-fit: cover;
+}
+#vanButton:hover + #vanDiv {
+  visibility: visible;
+  opacity: 1;
+  width: 200%;
+  height: 300%;
+}
+
+#AmaButton {
+  cursor: pointer;
+  grid-area: 8/5/10/6;
+  z-index: 4;
+  background-color: transparent;
+  border: none;
+  content: "";
+}
+#AmaDiv {
+  grid-area: 8/6/10/8;
+  z-index: 4;
+  background-color: #0f0f0f;
+  border: solid 1px gold;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 40px;
+}
+#AmaDiv img {
+  max-width: 100%;
+  max-height: 60%;
+  object-fit: cover;
+}
+#AmaButton:hover + #AmaDiv {
+  visibility: visible;
+  opacity: 1;
+  width: 200%;
+  height: 300%;
+}
+
+#TorButton {
+  cursor: pointer;
+  grid-area: 3/8/5/9;
+  z-index: 4;
+  background-color: transparent;
+  border: none;
+  content: "";
+}
+#TorDiv {
+  grid-area: 3/9/5/11;
+  z-index: 4;
+  background-color: #0f0f0f;
+  border: solid 1px gold;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 40px;
+}
+#TorDiv img {
+  max-width: 100%;
+  max-height: 60%;
+  object-fit: cover;
+}
+#TorButton:hover + #TorDiv {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 300%;
+}
+#vanDiv,
+#AmaDiv,
+#TorDiv {
+  opacity: 0;
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+  transition: ocacity 0.5s ease-in-out, visibility 0.5s ease-in-out,
+    width 1s ease-in-out, height 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  #vanDiv,
+  #AmaDiv,
+  #TorDiv {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #TorButton:hover + #TorDiv {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 250%;
+  }
+  #AmaButton:hover + #AmaDiv {
+    visibility: visible;
+    opacity: 1;
+    width: 200%;
+    height: 250%;
+  }
+  #vanButton:hover + #vanDiv {
+    visibility: visible;
+    opacity: 1;
+    width: 200%;
+    height: 250%;
+  }
+}

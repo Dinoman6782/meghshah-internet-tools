@@ -1,0 +1,45 @@
+.aboutText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  padding: 30px;
+}
+#divder {
+  height: 100px;
+  width: 100%;
+}
+.aboutText div {
+  font-size: 30px;
+  padding: 100px;
+}
+.aboutRect {
+  height: 100%;
+  width: 150%;
+  background-color: gold;
+  content: "";
+  border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+  .aboutText div {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .aboutRect {
+    width: 400%;
+  }
+}
+@media (max-width: 900px) {
+  .aboutText {
+    height: 300px;
+  }
+  .aboutText div {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .aboutRect {
+    width: 800%;
+  }
+}

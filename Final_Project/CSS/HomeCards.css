@@ -1,0 +1,56 @@
+#cards {
+  z-index: 1;
+}
+
+#cards:hover > .card > .cardBorder {
+  opacity: 1;
+}
+
+.card {
+  border-radius: 10px;
+  height: 1800px;
+  width: 100%;
+  position: relative;
+}
+
+.card::before,
+.card > .cardBorder {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+  z-index: 3;
+}
+
+.card > .cardBorder {
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y),
+    #ffca02,
+    #814d01,
+    transparent 40%
+  );
+  z-index: 2;
+}
+
+.card > .cardContent {
+  background: radial-gradient(var(--main-colour1) 50%, var(--main-colour2));
+  border-radius: inherit;
+  position: absolute;
+  inset: 2px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .card {
+    border-radius: 10px;
+    height: 2800px;
+    width: 100%;
+    position: relative;
+  }
+}
